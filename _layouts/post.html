@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="mb3">
+      <div class="clearfix">
+        <div class="col">
+          <div class="px1">
+            {% include menu.html %}
+          </div>
+        </div>
+        <div class="col col-5">
+          <div class="px4">
+            <div class="min-height-1">
+              <div class="center">
+                <img src="/assets/{{ page.image }}" alt="{{ page.title }}" width="100%">
+              </div>
+              <h2 class="h2">
+                <a href="{{ page.url }}" class="bold black text-decoration-none">
+                  {{ page.subtitle }}
+                </a>
+              </h2>
+
+              {{ content }}
+
+              <a class="bold black text-decoration-none table my3">
+                <div class="table-cell"><img src="/assets/mixtape.jpg" alt="{{ page.music }}" width="40" class="mr1"/></div>
+                <div class="table-cell align-middle"><small><u>Music: {{ page.music }}</u></small></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: All
+---
+
+<div class="min-height-1">
+  <div class="clearfix">
+    {% for post in site.posts %}
+      <div class="col col-4 center mt3 pb1 px1">
+        <a href="{{ post.url }}" class="bold black text-decoration-none">
+          <div class="min-height-p5">
+            <img src="/assets/{{ post.image }}" alt="{{ post.title }}" width="100%">
+          </div>
+          <small class="border-bottom">{{ post.title }}</small>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

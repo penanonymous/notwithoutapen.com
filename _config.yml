@@ -1,0 +1,14 @@
+title: Open when you find this
+description: >
+  Hi. I'm sorry. I can't... get over you.
+  I hope it's ok that I'm still a little in love with you.
+  Open when you find this.
+baseurl: ""
+url: ""
+
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

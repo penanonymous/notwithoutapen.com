@@ -1,0 +1,24 @@
+---
+layout: default
+title: Random
+---
+
+{% assign post = site.posts | random %}
+
+<div class="min-height-1">
+  <div class="center">
+    <img src="/assets/{{ post.first.image }}" alt="{{ post.first.title }}" width="100%">
+  </div>
+  <a href="{{ post.first.url }}" class="bold black text-decoration-none">
+    <h2 class="h2">
+      {{ post.first.title }}
+    </h2>
+  </a>
+
+  {{ post.first.content }}
+
+  <a class="bold black text-decoration-none table my3">
+    <div class="table-cell"><img src="/assets/mixtape.jpg" alt="{{ page.music }}" width="40" class="mr1"/></div>
+    <div class="table-cell align-middle"><small><u>Music: {{ post.first.music }}</u></small></div>
+  </a>
+</div>
