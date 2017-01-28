@@ -9,7 +9,7 @@ title: Random
   <div class="center">
     <img src="{{ site.baseurl }}/assets/{{ post.first.image }}" alt="{{ post.first.title }}" width="100%">
   </div>
-  <a href="{{ post.first.url }}" class="bold black text-decoration-none">
+  <a href="{% if site.baseurl != '' %}{{ site.baseurl }}/{% endif %}{{ post.first.url }}" class="bold black text-decoration-none">
     <h2 class="h2">
       {{ post.first.title }}
     </h2>

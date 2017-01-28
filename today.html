@@ -7,7 +7,7 @@ title: Today
   <div class="center">
     <img src="{{ site.baseurl }}/assets/{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" width="100%">
   </div>
-  <a href="{{ site.posts.first.url }}" class="bold black text-decoration-none">
+  <a href="{% if site.baseurl != '' %}{{ site.baseurl }}/{% endif %}{{ site.posts.first.url }}" class="bold black text-decoration-none">
     <h2 class="h2">
       {{ site.posts.first.title }}
     </h2>
