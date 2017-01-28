@@ -5,7 +5,7 @@ title: Today
 
 <div class="min-height-1">
   <div class="center">
-    <img src="/assets/{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" width="100%">
+    <img src="{{ site.baseurl }}/assets/{{ site.posts.first.image }}" alt="{{ site.posts.first.title }}" width="100%">
   </div>
   <a href="{{ site.posts.first.url }}" class="bold black text-decoration-none">
     <h2 class="h2">
@@ -16,7 +16,7 @@ title: Today
   {{ site.posts.first.content}}
 
   <a class="bold black text-decoration-none table my3">
-    <div class="table-cell"><img src="/assets/mixtape.jpg" alt="{{ page.music }}" width="40" class="mr1"/></div>
+    <div class="table-cell"><img src="{{ site.baseurl }}/assets/mixtape.jpg" alt="{{ page.music }}" width="40" class="mr1"/></div>
     <div class="table-cell align-middle"><small><u>Music: {{ site.posts.first.music }}</u></small></div>
   </a>
 </div>
