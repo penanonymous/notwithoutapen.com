@@ -18,7 +18,7 @@
                 <img src="{{ site.baseurl }}/assets/{{ page.image }}" alt="{{ page.title }}" width="100%">
               </div>
               <h2 class="h2">
-                <a href="{% if site.baseurl != '' %}{{ site.baseurl }}/{% endif %}{{ page.url }}" class="bold black text-decoration-none">
+                <a href="{% if site.baseurl != '' %}{{ site.baseurl }}{% endif %}{{ page.url }}" class="bold black text-decoration-none">
                   {{ page.subtitle }}
                 </a>
               </h2>
