@@ -7,9 +7,9 @@ title: All
   <div class="clearfix">
     {% for post in site.posts %}
       <div class="col col-4 center mt3 pb1 px1">
-        <a href="{% if site.baseurl != '' %}{{ site.baseurl }}{% endif %}{{ post.url }}" class="bold black text-decoration-none">
+        <a href="{{ post.url }}" class="bold black text-decoration-none">
           <div class="min-height-p5">
-            <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="{{ post.title }}" width="100%">
+            <img src="/assets/{{ post.image }}" alt="{{ post.title }}" width="100%">
           </div>
           <small class="border-bottom">{{ post.title }}</small>
         </a>
